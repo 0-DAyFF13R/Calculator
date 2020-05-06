@@ -43,16 +43,17 @@
             // 
             // Display
             // 
-            this.Display.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Display.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Display.Location = new System.Drawing.Point(12, 12);
             this.Display.Name = "Display";
-            this.Display.Size = new System.Drawing.Size(356, 44);
+            this.Display.Size = new System.Drawing.Size(356, 46);
             this.Display.TabIndex = 0;
             this.Display.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 111);
+            this.button1.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(61, 111);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 80);
             this.button1.TabIndex = 1;
@@ -61,7 +62,8 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(98, 111);
+            this.button2.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Location = new System.Drawing.Point(147, 111);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(80, 80);
             this.button2.TabIndex = 2;
@@ -70,7 +72,8 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(184, 111);
+            this.button3.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Location = new System.Drawing.Point(233, 111);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(80, 80);
             this.button3.TabIndex = 3;
@@ -79,7 +82,8 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(12, 197);
+            this.button4.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.Location = new System.Drawing.Point(61, 197);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(80, 80);
             this.button4.TabIndex = 4;
@@ -88,7 +92,8 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(98, 197);
+            this.button5.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button5.Location = new System.Drawing.Point(147, 197);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(80, 80);
             this.button5.TabIndex = 5;
@@ -97,7 +102,8 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(184, 197);
+            this.button6.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button6.Location = new System.Drawing.Point(233, 197);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(80, 80);
             this.button6.TabIndex = 6;
@@ -106,7 +112,8 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(12, 283);
+            this.button7.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button7.Location = new System.Drawing.Point(61, 283);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(80, 80);
             this.button7.TabIndex = 7;
@@ -115,7 +122,8 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(98, 283);
+            this.button8.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button8.Location = new System.Drawing.Point(147, 283);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(80, 80);
             this.button8.TabIndex = 8;
@@ -124,7 +132,8 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(184, 283);
+            this.button9.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button9.Location = new System.Drawing.Point(233, 283);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(80, 80);
             this.button9.TabIndex = 9;
@@ -133,14 +142,15 @@
             // 
             // button0
             // 
-            this.button0.Location = new System.Drawing.Point(98, 369);
+            this.button0.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button0.Location = new System.Drawing.Point(147, 369);
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(80, 80);
             this.button0.TabIndex = 10;
             this.button0.Text = "0";
             this.button0.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -156,7 +166,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Display);
-            this.Name = "Form1";
+            this.Name = "Calculator";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
