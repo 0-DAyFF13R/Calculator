@@ -28,7 +28,6 @@ namespace CalculatorSimple
                 buttonName = "button" + i;
                 button = (Button)this.Controls[buttonName];
                 button.Text = i.ToString();
-
             }
         }
     }
