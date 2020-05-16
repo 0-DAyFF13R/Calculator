@@ -131,5 +131,11 @@ namespace CalculatorSimple
             numOne = Convert.ToDouble(Display.Text);
             Display.Text = string.Empty;
         }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            double result = 0;
+            Display.Text = result.ToString();
+        }
     }
 }

@@ -47,6 +47,7 @@
             this.buttonSubstract = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.buttonResult = new System.Windows.Forms.Button();
+            this.buttonClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Display
@@ -207,7 +208,7 @@
             // 
             this.buttonAdd.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonAdd.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonAdd.Location = new System.Drawing.Point(249, 79);
+            this.buttonAdd.Location = new System.Drawing.Point(248, 133);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(73, 48);
             this.buttonAdd.TabIndex = 14;
@@ -219,7 +220,7 @@
             // 
             this.buttonMultiply.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonMultiply.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonMultiply.Location = new System.Drawing.Point(249, 187);
+            this.buttonMultiply.Location = new System.Drawing.Point(248, 241);
             this.buttonMultiply.Name = "buttonMultiply";
             this.buttonMultiply.Size = new System.Drawing.Size(73, 48);
             this.buttonMultiply.TabIndex = 15;
@@ -231,7 +232,7 @@
             // 
             this.buttonSubstract.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonSubstract.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSubstract.Location = new System.Drawing.Point(249, 132);
+            this.buttonSubstract.Location = new System.Drawing.Point(248, 186);
             this.buttonSubstract.Name = "buttonSubstract";
             this.buttonSubstract.Size = new System.Drawing.Size(73, 48);
             this.buttonSubstract.TabIndex = 16;
@@ -243,7 +244,7 @@
             // 
             this.button12.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button12.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button12.Location = new System.Drawing.Point(249, 240);
+            this.button12.Location = new System.Drawing.Point(248, 294);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(73, 48);
             this.button12.TabIndex = 17;
@@ -257,17 +258,30 @@
             this.buttonResult.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonResult.Location = new System.Drawing.Point(12, 294);
             this.buttonResult.Name = "buttonResult";
-            this.buttonResult.Size = new System.Drawing.Size(310, 64);
+            this.buttonResult.Size = new System.Drawing.Size(231, 64);
             this.buttonResult.TabIndex = 18;
             this.buttonResult.Text = "=";
             this.buttonResult.UseVisualStyleBackColor = false;
             this.buttonResult.Click += new System.EventHandler(this.buttonResult_Click);
             // 
+            // buttonClear
+            // 
+            this.buttonClear.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonClear.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonClear.Location = new System.Drawing.Point(248, 79);
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Size = new System.Drawing.Size(73, 48);
+            this.buttonClear.TabIndex = 19;
+            this.buttonClear.Text = "C";
+            this.buttonClear.UseVisualStyleBackColor = false;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(342, 370);
+            this.ClientSize = new System.Drawing.Size(335, 370);
+            this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.buttonResult);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.buttonSubstract);
@@ -315,6 +329,7 @@
         private System.Windows.Forms.Button buttonSubstract;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button buttonResult;
+        private System.Windows.Forms.Button buttonClear;
     }
 }
 
