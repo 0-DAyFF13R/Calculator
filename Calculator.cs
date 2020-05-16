@@ -130,7 +130,7 @@ namespace CalculatorSimple
             {
                 result = numOne - numTwo;
             }
-            else if (operation == "x")
+            else if (operation == "*")
             {
                 result = numOne * numTwo;
             }
@@ -144,6 +144,13 @@ namespace CalculatorSimple
             }
 
             Display.Text = result.ToString();
+
+            if (operation == "/")
+            {
+                result = numOne / 0;
+                Display.Text = "???";
+                MessageBox.Show("You can't divide by 0, learn more at school");
+            }
         }
 
         private void buttonSubstract_Click(object sender, EventArgs e)
