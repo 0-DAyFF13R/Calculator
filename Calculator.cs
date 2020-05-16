@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.PerformanceData;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,9 @@ namespace CalculatorSimple
         double numOne = 0;
         double numTwo = 0;
         string operation;
+        bool scifiMode = false;
+        const int widthSmall = 352;
+        const int widthLarge = 622;
 
         public Calculator()
         {
@@ -27,6 +31,12 @@ namespace CalculatorSimple
         private void InitializeCalculator()
         {
             this.BackColor = Color.Blue;
+            this.Width = widthSmall;
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MinimizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+
             Button button = null;
             string buttonName = null;
             for(int i = 0; i < 10; i++)
@@ -100,6 +110,12 @@ namespace CalculatorSimple
             numOne = Convert.ToDouble(Display.Text);
             Display.Text = string.Empty;
             operation = ((Button)sender).Text;
+
+            if(operation == "Sqrt")
+            {
+                Display.Text = Math.Sqrt(numOne).ToString();
+                return;
+            }
         }
 
         private void buttonResult_Click(object sender, EventArgs e)
@@ -122,6 +138,10 @@ namespace CalculatorSimple
             {
                 result = numOne / numTwo;
             }
+            else if(operation == "^")
+            {
+                result = Math.Pow(numOne, numTwo);
+            }
 
             Display.Text = result.ToString();
         }
@@ -136,6 +156,19 @@ namespace CalculatorSimple
         {
             double result = 0;
             Display.Text = result.ToString();
+        }
+
+        private void buttonSciFi_Click(object sender, EventArgs e)
+        {
+            if (scifiMode)
+            {
+                this.Width = widthSmall;
+            }
+            else
+            {
+                this.Width = widthLarge;
+            }
+            scifiMode = !scifiMode;
         }
     }
 }
